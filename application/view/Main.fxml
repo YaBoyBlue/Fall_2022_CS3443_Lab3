@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="800.0" smooth="false">
+               <image>
+                  <Image url="@../../images/header-JamesWebb.jpeg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button fx:id="a11" mnemonicParsing="false" onAction="#handle" prefHeight="50.0" prefWidth="150.0" text="Apollo 11" />
+                  <Button fx:id="a13" mnemonicParsing="false" onAction="#handle" prefHeight="50.0" prefWidth="150.0" text="Apollo 13" />
+                  <Button fx:id="a15" mnemonicParsing="false" onAction="#handle" prefHeight="50.0" prefWidth="150.0" text="Apollo 15" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Text fx:id="tTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" textAlignment="CENTER" wrappingWidth="800.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="tDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a mission to view more information." textAlignment="CENTER" wrappingWidth="800.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="tLeft" strokeType="OUTSIDE" strokeWidth="0.0" text="tLeft" textAlignment="CENTER" visible="false" wrappingWidth="300.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="iLeft" fitHeight="300.0" fitWidth="300.0" smooth="false" visible="false">
+                           <image>
+                              <Image url="@../../images/header-JamesWebb.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="tRight" strokeType="OUTSIDE" strokeWidth="0.0" text="tRight" textAlignment="CENTER" visible="false" wrappingWidth="300.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="iRight" fitHeight="300.0" fitWidth="300.0" smooth="false" visible="false">
+                           <image>
+                              <Image url="@../../images/header-JamesWebb.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
